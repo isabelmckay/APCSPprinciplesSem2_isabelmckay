@@ -6,7 +6,7 @@
 
 // variables
 var num = [1,3,2];
-var min
+var min // small value?
 // MySort
 function MySort (num) {
   for (var i = 1; i < num.length; i++){

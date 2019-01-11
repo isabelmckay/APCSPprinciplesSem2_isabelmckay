@@ -21,21 +21,16 @@ function bubbleSort(Bars){
 
 // selection Sort
 // variables
-var num = [1,3,2];
-var min
-// MySort
-function SelectSort (num) {
-  for (var i = 0; i < num.length; i++){
-    var min = i
-    for (var j = 1; j < num.length; j++){
-      if (num[j] < num[min]){
-        min = j;
+// arr = array
+function SelectSort
+for (var i = 0; i < arr.length - 1; i++)
+      {
+          var index = i;
+          for (var j = i + 1; j < arr.length; j++)
+  if (arr[j] < arr[index])
+     index = j;
+//swap!
+          var smallerNumber = arr[index];
+          arr[index] = arr[i];
+          arr[i] = smallerNumber;
       }
-    }
-    if (min != i){
-      var temp = num[min];
-      num[min] = num[i];
-      num[i] = temp;
-    }
-  }
-}
