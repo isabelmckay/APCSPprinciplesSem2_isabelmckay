@@ -1,7 +1,7 @@
 /*
 ** Insertion Sort
 ** Isabel McKay
-** Aug 21, 2018
+** January 11, 2019
 */
 
 // Insertion sort function

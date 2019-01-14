@@ -1,7 +1,7 @@
 /*
 ** Selection Sort
 ** Isabel McKay
-** Aug 21, 2018
+** January 10, 2019
 */
 
 

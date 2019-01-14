@@ -1,7 +1,7 @@
 /*
 ** My Sort
 ** Isabel McKay
-** Aug 21, 2018
+** January 9, 2019
 */
 
 // variables
