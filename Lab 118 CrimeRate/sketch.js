@@ -31,7 +31,7 @@ function draw(){
       for(var j = 0; j < (length - i - 1); j++){
         var a = data[j].crimedata.state;
         var b = data[j+1].crimedata.state;
-        if(data[j] > dat[j+1]){
+        if(data[j] > data[j+1]){
           // swapping numbers
           // temp variable
           var temp = data[j];
