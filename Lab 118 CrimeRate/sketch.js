@@ -26,12 +26,12 @@ function draw(){
 
 // bubble sort function
   function bubbleSort(data){
-    var length = data.crime.length
-    console.log("i got here, " + length)
+    var length = data.crime.length;
+  ///  console.log("i got here, " + length)
     for(var i = 0; i < length; i++){
       for(var j = 0; j < (length - i - 1); j++){
-        var a = data[j].data.crime[j].Murder;
-        var b = data[j+1].data.crime[j+1].Murder;
+        var a = data.crime[j].Murder;
+        var b = data.crime[j+1].Murder;
         if(a > b){
           // swapping numbers
           // temp variable
