@@ -41,6 +41,5 @@ function draw(){
         }
       }
     }
-    console.log("after the sort")
   }
   // end of sketch.js
