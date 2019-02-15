@@ -21,6 +21,7 @@ function preload(){
 
 // how do I make a bar graph??
 function draw(){
+  function visuals(){
   // bar graph function here
 }
 
@@ -41,5 +42,10 @@ function draw(){
         }
       }
     }
+  }
+
+//visual representation function
+  function visuals(){
+
   }
   // end of sketch.js
