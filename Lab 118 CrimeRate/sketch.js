@@ -4,7 +4,7 @@
 
 // global variables
 var data = [];
-
+var bigTotal = 0;
 // loading JSON file data
 function preload(){
   data = loadJSON("data.json");
@@ -14,7 +14,6 @@ function preload(){
 
 //setup code
   function setup(){
-  noCanvas();
   bubbleSort(data);
   console.log(data.crime)
 }
@@ -46,6 +45,15 @@ function draw(){
 
 //visual representation function
   function visuals(){
-
+      for(var i = 1; i < data.crime.length; i++){
+        bigTotal = bigTotal + data.crime.length[i].total;
+      }
+      var lastAngle = 0;
+        for(var i = 0; i < data.crime.length; i++){
+          var angle = ((data.crime[i].total / bigTotal) * (2 * PI));
+          fill(100, 25, 10*i);
+          arc(300, 400, 500, 700, lastAngle, lastAngle + angle);
+          lastAngle +- angle
+        }
   }
   // end of sketch.js
