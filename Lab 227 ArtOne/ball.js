@@ -26,7 +26,7 @@ function Ball(location, velocity, radius, col){
       if(d<450){
         var attForce = p5.Vector.sub(b1.loc, this.loc);
         attForce.normalize();
-        attForce.mult(.08);
+        attForce.mult(.4);
         this.vel.add(attForce)
       }
       //if this is less than 85 away from ball
@@ -38,10 +38,11 @@ function Ball(location, velocity, radius, col){
         this.vel.add(repForce)
       }
     }
-    this.vel.limit(3);
-    this.loc.add(this.vel);
+this.vel.limit(3);
+this.loc.add(this.vel);
 
   }
+  //draw a spinning cone with radius 40 and height 70
 
   //checkEdges() reverses speed when the ball touches an edge
   this.checkEdges = function(){
@@ -52,8 +53,8 @@ function Ball(location, velocity, radius, col){
 
   }
   // render () draws the ball at the new location
-  this.render = function (){
-    fill(this.col);
-    ellipse(this.loc.x,this.loc.y, this.rad, this.rad)
+this.render = function (){
+   stroke(this.col);
+  line(this.loc.x,this.loc.y, this.rad, this.rad);
   }
 }
