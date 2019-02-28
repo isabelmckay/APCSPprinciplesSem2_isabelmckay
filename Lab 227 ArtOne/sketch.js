@@ -10,7 +10,7 @@ function setup() {
  b1 = new Ball (createVector(width/2, height/2), createVector(0,0),
                 25,
                 color(66, 244, 158));
-  loadBalls(110);  //  !!!!!!!!!!  this is a function call
+  loadBalls(200);  //  !!!!!!!!!!  this is a function call
 }
 
 function draw() {
